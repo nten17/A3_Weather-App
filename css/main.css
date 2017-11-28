@@ -2,11 +2,30 @@
  * CSS written here will override Tachyons
  * ======================================== */
 
+
+input {
+  border: none;
+  border-bottom: solid 3px black;
+  background: transparent;
+  outline: none;
+}
+
+.title {
+  font-size: 10vw;
+}
+
+.current-temp {
+  font-size: 30vw;
+}
+
  /* ========================================
   * Temperature
   * ======================================== */
- .cold {
-   background: cyan;
+ .cold .all{
+   background-image: linear-gradient(cyan, blue);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
  }
 
  .warm {
@@ -16,6 +35,8 @@
  .hot{
    background: tomato;
  }
+
+
 
  /* ========================================
   * Weather
@@ -63,3 +84,13 @@
  .windy {
 
  }
+
+ /* ========================================
+  * text
+  * ======================================== */
+
+p, h1, input {
+  color: black;
+  mix-blend-mode: overlay;
+  margin: 0;
+}

@@ -3,48 +3,59 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Set a page title -->
     <title>Weather</title>
-    
+
     <!-- Site Styles -->
     <link rel="stylesheet" href="/css/tachyons.min.css">
     <link rel="stylesheet" href="/css/main.css">
   </head>
 
   <body>
-    <div class="sans-serif">
-      
+    <div class="all sans-serif">
+
       <!-- If there is an error, this box is shown. 'dn' is the only required class -->
       <div id="error" class="dn bg-red white pa4 fixed bottom-0 w-100">
-        Sorry, we couldn't find that city. 
+        Sorry, we couldn't find that city.
       </div>
-          
+
+      <!-- Heading -->
+      <p class="title b pt4 pl4 ma0 black">Weather For</p>
+
+
       <!-- Search Box -->
-      <form id="location-search" class="pa4">
-        <h1 class="flex flex-wrap items-baseline">
-          <span class="mr3 mb2">
-            Weather for:
+      <form id="location-search" class="pl4 pr4 pa1">
+        <h1 class="flex items-baseline">
+          <span class="mr3 mb2 dib">
+            <img src="assets/search.svg" alt="serach icon">
           </span>
           <input type="text" id="area" value="Boston" class="flex-auto">
         </h1>
       </form>
-      
+
       <!-- Content -->
-      <div class="flex flex-wrap pa4">
-        <div class="w-100 w-50-m w-third-l">
-          <h2>Location</h2>
-          <p>City: <span id="location-name"></span></p>
-          <p>Country: <span id="country"></span></p>
+      <div class="flex flex-wrap pl4 pa0">
+
+        <!-- lodcation and temp -->
+        <div class="w-100 w-50-m w-third-l pt4">
+          <div class="ma0 pa0">
+            <p class="ma0 f1 b"><span id="location-name">
+            </span>, <span id="country"></span></p>
+          </div>
+
+          <div class="">
+            <p class="ma0 pa0 current-temp">
+              <span id="temp"></span></p>
+              <!-- min/max -->
+              <div class="f2">
+                <p class="dib"><span id="temp-max"></span> /</p>
+                <p class="dib"><span id="temp-min"></span></p>
+              </div>
+          </div>
+
         </div>
-        
-        <div class="w-100 w-50-m w-third-l">
-          <h2>Temperature</h2>
-          <p>Current Temp: <span id="temp"></span></p>
-          <p>Max Temp: <span id="temp-max"></span></p>
-          <p>Min Temp: <span id="temp-min"></span></p>
-        </div>
-        
+
         <div class="w-100 w-50-m w-third-l">
           <h2>Weather</h2>
           <p>Condition: <span id="condition"></span></p>
@@ -52,9 +63,9 @@
           <p>Wind Speed: <span id="wind-speed"></span>mph</p>
         </div>
       </div>
-      
+
     </div>
-    
+
     <!-- Site JavaScript -->
     <script src="/javascript/toggleClass.js" charset="utf-8"></script>
     <script src="/javascript/main.js" charset="utf-8"></script>
