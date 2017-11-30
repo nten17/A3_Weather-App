@@ -2,6 +2,9 @@
  * CSS written here will override Tachyons
  * ======================================== */
 
+.all {
+  font-family: 'Rubik', helvetica, sans-serif;
+}
 
 input {
   border: none;
@@ -18,22 +21,33 @@ input {
   font-size: 30vw;
 }
 
+.degrees {
+  font-size: 10vw;
+  padding-top: 5vw;
+}
+
  /* ========================================
   * Temperature
   * ======================================== */
- .cold .all{
-   background-image: linear-gradient(cyan, blue);
+ .cold .all {
+   background: linear-gradient(#20ecff, #212fff);
    background-repeat: no-repeat;
    background-size: cover;
    height: 100vh;
  }
 
- .warm {
-   background: orange;
+ .warm .all {
+   background: linear-gradient(#f4eb41, #ff992d);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
  }
 
- .hot{
-   background: tomato;
+ .hot .all{
+   background: linear-gradient(#f4a641, #f45641);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
  }
 
 
@@ -62,7 +76,7 @@ input {
 }
 
 .clear {
-
+  background-image: url(assets/clear.svg);
 }
 
 .clouds {
@@ -74,7 +88,7 @@ input {
  * ======================================== */
 
  .calm {
-
+   background-image: url(assets/calmn.svg);
  }
 
  .breezy {
@@ -89,8 +103,11 @@ input {
   * text
   * ======================================== */
 
-p, h1, input {
+p, h1, input, img, .divider {
   color: black;
   mix-blend-mode: overlay;
+}
+
+p, h1, input, img {
   margin: 0;
 }
