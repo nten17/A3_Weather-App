@@ -44,7 +44,7 @@ input {
 }
 
 .cold {
-  background: #212fff
+  background: #095ce2
 }
 
 .warm {
@@ -52,11 +52,11 @@ input {
 }
 
 .hot {
-  background: #f45641
+  background: #ed401a
 }
 
  .cold .all {
-   background: linear-gradient(#20ecff, #212fff);
+   background: linear-gradient(#20ecff, #095ce2);
  }
 
  .warm .all {
@@ -64,7 +64,7 @@ input {
  }
 
  .hot .all{
-   background: linear-gradient(#f4a641, #f45641);
+   background: linear-gradient(#f4a641, #ed401a);
  }
 
 
@@ -83,24 +83,24 @@ input {
 }
 
 
-.thunderstorm {
-
+.thunderstorm .icon {
+  background-image: url(/assets/thunderstorm.svg);
 }
 
-.drizzle {
-
+.drizzle .icon {
+  background-image: url(/assets/drizzle.svg);
 }
 
-.rain {
-
+.rain .icon {
+  background-image: url(/assets/rain.svg);
 }
 
-.snow {
-
+.snow .icon {
+  background-image: url(/assets/snow.svg);
 }
 
-.atmosphere {
-
+.atmosphere .icon {
+  background-image: url(/assets/atmosphere.svg);
 }
 
 .clear .icon {
@@ -120,11 +120,11 @@ input {
  }
 
  .breezy {
-
+   background-image: url(assets/breezy.svg);
  }
 
  .windy {
-
+   background-image: url(assets/windy.svg);
  }
 
  /* ========================================

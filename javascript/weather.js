@@ -74,8 +74,6 @@ async function getWeather (city, key, units = 'imperial') {
     conditionDescription.innerText = data.weather[0].description
     windSpeed.innerText = Math.round(data.wind.speed)
 
-
-
     // Set Weather Body Class
     document.body.classList.add(data.weather[0].main.toLowerCase())
 
