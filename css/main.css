@@ -44,15 +44,15 @@ input {
 }
 
 .cold {
-  background: #095ce2
+  background: #095ce2;
 }
 
 .warm {
-  background: #ff992d
+  background: #ff992d;
 }
 
 .hot {
-  background: #ed401a
+  background: #ed401a;
 }
 
  .cold .all {
@@ -105,10 +105,22 @@ input {
 
 .clear .icon {
   background-image: url(/assets/clear.svg);
+    animation: pulse 1000ms linear infinite alternate
 }
 
 .clouds .icon {
   background-image: url(/assets/clouds.svg);
+  animation: float 1300ms linear infinite alternate
+}
+
+@keyframes float {
+    from {transform: translateY(0px);}
+    to {transform: translateY(10px);}
+}
+
+@keyframes pulse {
+    from {transform: scale(1);}
+    to {transform: scale(1.06);}
 }
 
 /* ========================================
@@ -116,15 +128,15 @@ input {
  * ======================================== */
 
  .calm {
-   background-image: url(assets/calm.svg);
+
  }
 
  .breezy {
-   background-image: url(assets/breezy.svg);
+
  }
 
  .windy {
-   background-image: url(assets/windy.svg);
+
  }
 
  /* ========================================
