@@ -52,7 +52,7 @@ input {
 }
 
 .hot {
-  background: #ed401a;
+  background: #ef5d43;
 }
 
  .cold .all {
@@ -64,7 +64,7 @@ input {
  }
 
  .hot .all{
-   background: linear-gradient(#f4a641, #ed401a);
+   background: linear-gradient(#f4a641, #ef5d43);
  }
 
 
